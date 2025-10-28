@@ -43,4 +43,18 @@ body{
    "footer footer";
    grid-template-columns:1fr 3fr;
    grid-template-rows:120px 1fr 60px;
+   background-color:;
 }
+
+header {
+grid-area: header; 
+background-color:rgb(56, 39, 83);
+}
+
+nav {
+grid-area: nav;
+background-color: ; }
+main {
+grid-area: main; }
+footer {
+grid-area: footer; }
