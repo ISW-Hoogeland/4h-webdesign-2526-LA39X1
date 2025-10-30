@@ -39,22 +39,40 @@ body{
    display:grid;
    grid-template-areas:
    "header header"
-   "Nav main"
+   "nav main"
    "footer footer";
    grid-template-columns:1fr 3fr;
    grid-template-rows:120px 1fr 60px;
-   background-color:;
 }
 
 header {
 grid-area: header; 
-background-color:rgb(56, 39, 83);
+background-color:rgba(20, 255, 184, 0.363);
+border-radius: 20px;
 }
 
 nav {
 grid-area: nav;
-background-color: ; }
+background-color:rgba(0, 255, 200, 0.281); 
+height: 60vh;
+border-radius: 10px;
+padding: ;
+}
+
+
 main {
-grid-area: main; }
+grid-area: main;
+background-color:;
+border-radius: 20;  }
 footer {
-grid-area: footer; }
+grid-area: footer;
+background-color: rgba(127, 255, 212, 0.425); }
+
+Nav a{
+   color: red;
+   text-decoration: none;
+}
+Nav a:hover {
+   color: rgb(0, 255, 255);
+ 
+}
