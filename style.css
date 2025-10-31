@@ -63,9 +63,14 @@ margin: 12px;
 
 
 main {
+   display: flex;
+   gri
 grid-area: main;
 background-color:;
-border-radius: 20;  }
+border-radius: 20; 
+gap: 50px;
+}
+
 
 
 footer {
