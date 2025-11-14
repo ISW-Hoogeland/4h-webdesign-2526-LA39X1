@@ -46,8 +46,16 @@ body{
 }
 
 header {
+:after {
+    content: "❣";
+    margin-left: 8px;
+}
+:before {
+    content: "❣";
+    margin-right: 8px;
+}
 grid-area: header; 
-background-color:rgba(20, 255, 184, 0.363);
+background-color:rgba(20, 255, 184, 0.244);
 border-radius: 20px;
 text-align: center;
 }
@@ -64,9 +72,9 @@ margin: 12px;
 
 main {
    display: flex;
-   gri
+   gr
 grid-area: main;
-background-color:;
+background-color:
 border-radius: 20; 
 gap: 50px;
 }
@@ -81,7 +89,7 @@ border-radius: 10px;
 }
 
 Nav a{
-   color: rgb(0, 255, 149);
+   color: rgba(52, 59, 56, 0.865);
    text-decoration: none;
 }
 Nav a:hover {
