@@ -8,7 +8,7 @@
    Warning 1: this settings may change your layout.
    Warning 2: keep the * as selector for all tags when uncommenting. */
 /*  * {border: 1px dotted black;}   */
-  
+
 /* Add semi-transparant dark background to all boxes
    The more boxes are on top of eachother the darker tghe background color
    Warning: keep the * as selector for all tags when uncommenting. */
@@ -18,7 +18,7 @@
 
 /* Settings to make it easier for you
    uncomment permanently when you understand the meaning of them */
-   
+
 /* border is included in width en height of boxes */
 /* * { box-sizing: border-box; } */
 
@@ -35,68 +35,100 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
-body{
-   display:grid;
+body {
+   display: grid;
    grid-template-areas:
-   "header header"
-   "nav main"
-   "footer footer";
-   grid-template-columns:1fr 3fr;
-   grid-template-rows:120px 1fr 60px;
+      "header header"
+      "nav main"
+      "footer footer";
+   grid-template-columns: 1fr 3fr;
+   grid-template-rows: 120px 1fr 60px;
 }
 
 header {
-:after {
-    content: "❣";
-    margin-left: 8px;
-}
-:before {
-    content: "❣";
-    margin-right: 8px;
-}
-grid-area: header; 
-background-color:rgba(20, 255, 184, 0.244);
-border-radius: 20px;
-text-align: center;
+   color: brown;
+
+   :after {
+      content: "❣";
+      margin-left: 8px;
+   }
+
+   :before {
+      content: "❣";
+      margin-right: 8px;
+   }
+
+   grid-area: header;
+   background-color:rgba(20, 255, 184, 0.244);
+   border-radius: 20px;
+   text-align: center;
 }
 
 nav {
-grid-area: nav;
-background-color:rgba(0, 255, 200, 0.281); 
-height: 60vh;
-border-radius: 10px;
-padding:20px ;
-margin: 12px;
+   color: brown;
+   grid-area: nav;
+   background-color: rgba(0, 255, 200, 0.281);
+   height: 60vh;
+   border-radius: 10px;
+   padding: 20px;
+   margin: 12px;
 }
 
 
 main {
-   display: flex;
-   gr
-grid-area: main;
-background-color:
-border-radius: 20; 
-gap: 50px;
+   /* display: grid; */
+   grid-area: main;
+   /* grid-template-areas:
+      "1"
+      "2"
+      "3"
+      "4";
+   grid-template-rows: 1rem 1rem 1rem 1rem;
+   border-radius: 20;
+   gap: 50px; */
+
 }
 
+main h2 {
+   text-align: center;
+}
+
+main img {
+   grid-area: 2;
+}
 
 
 footer {
-grid-area: footer;
-background-color: rgba(127, 255, 212, 0.425);
-text-align: center; 
-border-radius: 10px;
+   color: brown;
+   grid-area: footer;
+   background-color: rgba(127, 255, 212, 0.425);
+   text-align: center;
+   border-radius: 10px;
 }
 
-Nav a{
+Nav a {
    color: rgba(52, 59, 56, 0.865);
    text-decoration: none;
 }
+
 Nav a:hover {
    color: rgb(0, 255, 255);
- 
+
 }
 
-.ja {
-   
+main h2 {
+   text-align: left;
+}
+
+.film h2 {
+   grid-area: 1;
+   background-color: aqua;
+}
+
+.reizen h2 {
+   background-color: gainsboro;
+
+}
+.fotografie h2{
+   background-color: beige;
 }
